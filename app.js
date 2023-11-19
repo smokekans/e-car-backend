@@ -16,6 +16,6 @@ app.use(express.static("public"));
 
 app.use("/cars", carsRouter);
 
-// app.use(errorHandlingMiddleware);
+app.use(errorHandlingMiddleware);
 
 module.exports = app;
